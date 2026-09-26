@@ -1,0 +1,68 @@
+/* SAKSHYA Global & Component Stylesheet */
+
+:root {
+    --brand-cyan: #06b6d4;
+    --brand-blue: #3b82f6;
+    --dark-bg: #ffffff;
+    --card-bg: rgba(218, 158, 231, 0.75);
+}
+
+body {
+    background-color: var(--dark-bg);
+    background-image:
+        radial-gradient(circle at 50% 0%, rgba(6, 182, 212, 0.12), transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.08), transparent 40%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.glass-panel {
+    background: rgba(53, 121, 231, 0.75);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+    background: rgba(30, 41, 59, 0.5);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.code-scroll::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.code-scroll::-webkit-scrollbar-track {
+    background: #ecda70;
+}
+
+.code-scroll::-webkit-scrollbar-thumb {
+    background: #c2ef78;
+    border-radius: 4px;
+}
+
+.code-scroll::-webkit-scrollbar-thumb:hover {
+    background: #f5cb83;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+
+.glow-cyan {
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.25);
+}
+
+@keyframes pulseGlow {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.8; }
+}
+
+.animate-pulse-slow {
+    animation: pulseGlow 3s infinite ease-in-out;
+}
